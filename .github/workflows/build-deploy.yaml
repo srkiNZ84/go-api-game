@@ -19,7 +19,7 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           username: srkiNZ84
-          password: ${{ secrets.GITHUB_TOKEN }}
+          password: ${{ secrets.SRDAN_GH_TOKEN }}
           registry: docker.pkg.github.com
           repository: srkinz84/go-api-game/api-player
           tags: ${{ github.actor }}-${{ github.run_number }}
