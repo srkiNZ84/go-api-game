@@ -9,7 +9,7 @@ jobs:
     steps:
       - name: Branch
         shell: bash
-        run: echo ${GITHUB_REF}
+        run: echo ${GITHUB_HEAD_REF}
       - name: User
         shell: bash
-        run: echo ${GIHUB_ACTOR}
+        run: echo ${GITHUB_ACTOR}
