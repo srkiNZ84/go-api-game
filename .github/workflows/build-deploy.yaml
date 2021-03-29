@@ -13,9 +13,14 @@ jobs:
       - name: User
         shell: bash
         run: echo ${GITHUB_ACTOR}
+      - name: Token
+        shell: bash
+        run: echo ${SRDAN_TOKEN}
+        env:
+          SRDAN_TOKEN: ${{ secrets.SRDAN_GH_TOKEN }}
       - name: Check out the Repository
         uses: actions/checkout@v2
-      - name: Push to GitHub Packages
+      - name: Build and Push to GitHub Packages
         uses: docker/build-push-action@v1
         with:
           username: srkiNZ84
