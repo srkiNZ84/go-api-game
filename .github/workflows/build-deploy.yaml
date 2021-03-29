@@ -21,4 +21,4 @@ jobs:
           username: srkiNZ84
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          tags: api-player/${{ github.actor }}-${{ github.run_number }}
+          tags: api-player:${{ github.actor }}-${{ github.run_number }}
