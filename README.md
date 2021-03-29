@@ -13,3 +13,5 @@ and then submit a Pull Request.
 Once that's done, the image should be built and deployed.
 
 and then the game should begin!
+
+## What are the rules?
