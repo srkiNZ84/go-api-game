@@ -21,5 +21,5 @@ jobs:
           username: srkiNZ84
           password: ${{ secrets.GITHUB_TOKEN }}
           registry: docker.pkg.github.com
-          repository: api-player
+          repository: srkiNZ84/go-api-game/api-player
           tags: ${{ github.actor }}-${{ github.run_number }}
