@@ -1,2 +1,6 @@
 # Go API Game
-Attempt at a Go API game
+
+## About
+This is an attempt at a Go API game.
+
+## How does it work?
