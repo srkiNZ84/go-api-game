@@ -1,0 +1,15 @@
+name: Build and deploy
+
+on: pull_request
+
+jobs:
+  first-test:
+    runs-on: ubuntu-latest
+    name: Testing
+    steps:
+      - name: Branch
+        shell: bash
+        run: echo ${GITHUB_REF}
+      - name: User
+        shell: bash
+        run: echo ${GIHUB_ACTOR}
