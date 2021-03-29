@@ -15,3 +15,5 @@ Once that's done, the image should be built and deployed.
 and then the game should begin!
 
 ## What are the rules?
+
+So, for a successful request you get 10 points, but you get "charged" 5 points every minute.
