@@ -3,9 +3,9 @@ name: Build and deploy
 on: pull_request
 
 jobs:
-  first-test:
+  build-and-push:
     runs-on: ubuntu-latest
-    name: Testing
+    name: Build and push Docker image 
     steps:
       - name: Branch
         shell: bash
@@ -13,3 +13,12 @@ jobs:
       - name: User
         shell: bash
         run: echo ${GITHUB_ACTOR}
+      - name: Check out the Repository
+        uses: actions/checkout@v2
+      - name: Push to GitHub Packages
+        uses: docker/build-push-action@v1
+        with:
+          username: srkiNZ84
+          password: ${{ secrets.GITHUB_TOKEN }}
+          registry: docker.pkg.github.com
+          tags: ${{ github.actor }}-${{ github.run_number }}
