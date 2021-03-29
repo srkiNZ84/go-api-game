@@ -7,3 +7,5 @@ This is an attempt at a Go API game.
 Well, to start off with, you need to fork this repository in GitHub.
 
 After this, you will need to make some... changes.
+
+and then submit a Pull Request.
